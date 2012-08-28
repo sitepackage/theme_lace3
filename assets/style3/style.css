@@ -1,0 +1,23 @@
+body{
+	background:url("body_bg.jpg") repeat;
+}
+a ,
+#topbar .cart_status a:hover  ,
+#sidebar1 h2 ,
+#footer .nav a ,
+#cart .summary .total_price ,
+#pagination a:hover ,
+#collection .title a:hover ,
+#collection .price ,
+#frontpage .heading span {
+	color: #fff;
+}
+#header .nav a:hover ,
+#collection .buy a:hover ,
+#sidebar1 .account fieldset .button {
+	background-color:#fff;
+	color:#000;
+}
+#pagination a:hover {
+  border: 1px solid #fff;
+}
