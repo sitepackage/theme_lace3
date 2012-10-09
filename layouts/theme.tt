@@ -139,7 +139,7 @@
         [%- end %]
         [%- if !settings.collection_enabled %]        
         <div class="block sidebar collection">
-          <h2 class="widgets" title="[% 'Browse by Collection' | loc %]"><span>Collection</span></h2>
+          <h2 class="widgets" title="[% 'Browse by Collection' | loc %]"><span>[% 'Collections' | loc %]</span></h2>
           [%- if linklists.collections.links %]
           <ul class="list">
             [%- foreach link in linklists.collections.links %]
@@ -185,7 +185,7 @@
         
         [%- if settings.brand_style && collection.handle && collection.handle != 'all' %]
         <div class="block sidebar brand nav-left">
-          <h2 class="widgets" title="[% 'Browse by Brand' | loc %]"><span>Brands</span></h2>
+          <h2 class="widgets" title="[% 'Browse by Brand' | loc %]"><span>[% 'Brands' | loc %]</span></h2>
             [%- if !settings.brand_style || settings.brand_style == 1 %]
             <form action="[% req.url %]" method="get">
               <select name="brand" class="select" onchange='location.href=this.form.brand.options[this.form.brand.selectedIndex].value;'>
@@ -207,7 +207,7 @@
         
         [%- if settings.type_style && collection.handle && collection.handle != 'all' %]
         <div class="block sidebar type nav-left">
-          <h2 class="widgets" title="[% 'Browse by Type' | loc %]"><span>Types</span></h2>
+          <h2 class="widgets" title="[% 'Browse by Type' | loc %]"><span>[% 'Types' | loc %]</span></h2>
             [%- if !settings.type_style || settings.type_style == 1 %]
             <form action="[% req.url %]" method="get">
               <select name="type" class="select" onchange='location.href=this.form.type.options[this.form.type.selectedIndex].value;'>
